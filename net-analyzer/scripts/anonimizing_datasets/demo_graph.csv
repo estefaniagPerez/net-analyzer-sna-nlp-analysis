@@ -1,0 +1,5 @@
+Source,Target,Link
+node1,node2,1
+node2,node3,1
+node2,node4,1
+node3,node1,1

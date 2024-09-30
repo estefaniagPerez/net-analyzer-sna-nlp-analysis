@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Build and Run Flask App",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/run.py",
+        "cwd": "${workspaceFolder}",
+        "envFile": "${workspaceFolder}/.env",
+        "preLaunchTask": "npm: build - react-app",
+      },
+      {
+        "name": "React Build (npm)",
+        "type": "node-terminal",
+        "cwd": "${workspaceFolder}/app/react-app",
+        "command": "npm run build",
+        "request": "launch"
+      }
+    ]
+  }

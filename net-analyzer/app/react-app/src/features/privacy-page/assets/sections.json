@@ -1,0 +1,72 @@
+{
+  "title": "Privacy and Legal",
+  "intro": "This section outlines the privacy policies and legal terms associated with the Net-Analyzer project.",
+  "sections": [
+    {
+      "heading": "Data Usage",
+      "content": "All data used in this project is sourced from public datasets. To ensure user privacy, any user names present in the datasets have been anonymized and replaced with unique identifiers (IDs)."
+    },
+    {
+      "heading": "Cookies",
+      "content": "We use only functional cookies to enhance your experience on our website. These cookies are essential for the website's operation and do not collect personal information."
+    },
+    {
+      "heading": "License",
+      "content": "This project is licensed under the MIT License. You are free to use, modify, and distribute the software as per the terms of the license."
+    },
+    {
+      "heading": "Liability",
+      "content": "We are not responsible for how third parties use the information provided by this project. The project is intended solely for academic purposes."
+    },
+    {
+      "heading": "Intended Use",
+      "content": "Net-Analyzer is designed for academic research and educational purposes. Any other use is not authorized and done at the user's own risk."
+    },
+    {
+      "heading": "Third-Party Libraries",
+      "content": "This project utilizes several third-party libraries to function effectively.",
+      "subsections": [
+        {
+          "subheading": "Python Libraries",
+          "libraries": [
+            "fastapi",
+            "uvicorn",
+            "pydantic",
+            "sqlalchemy",
+            "networkx",
+            "pandas",
+            "spark-nlp==5.4.0",
+            "pyspark==3.3.1",
+            "PyMongo"
+          ]
+        },
+        {
+          "subheading": "Node/React Libraries",
+          "libraries": [
+            "@emotion/babel-plugin",
+            "@emotion/react",
+            "@emotion/styled",
+            "@mantine/core",
+            "@mantine/hooks",
+            "@mantine/form",
+            "@mui/icons-material",
+            "@mui/material",
+            "@tabler/icons-react",
+            "@types/react",
+            "@types/react-dom",
+            "axios",
+            "highcharts",
+            "highcharts-react-official",
+            "postcss",
+            "postcss-preset-mantine",
+            "postcss-simple-vars",
+            "react",
+            "react-dom",
+            "react-router-dom",
+            "vite"
+          ]
+        }
+      ]
+    }
+  ]
+}

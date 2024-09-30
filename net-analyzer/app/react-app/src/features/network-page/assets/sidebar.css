@@ -1,0 +1,5 @@
+.left-aligned-wrapper {
+    text-align: left;
+    width: 100%;
+    align-items: flex-start;
+  }

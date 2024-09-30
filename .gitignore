@@ -1,0 +1,11 @@
+net-analyzer/PASSWORD.md
+net-analyzer/.venv/bin
+net-analyzer/.venv/lib
+net-analyzer/.venv/lib64
+net-analyzer/.venv/share
+python_notebooks/.venv/bin
+python_notebooks/.venv/lib
+python_notebooks/.venv/lib64
+python_notebooks/.venv/share
+python_notebooks/datasets.zip
+python_notebooks/new_csv_file.csv

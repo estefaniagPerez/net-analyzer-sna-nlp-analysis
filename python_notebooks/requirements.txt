@@ -1,0 +1,8 @@
+matplotlib
+pandas
+networkx
+scipy
+notebook
+spark-nlp==5.4.2
+pyspark==3.5.2
+pandas
