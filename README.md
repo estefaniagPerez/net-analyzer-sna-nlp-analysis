@@ -18,18 +18,13 @@ This repository contains two parts:
 
 ## Datasets
 
-<div class="warning" style='background-color:#FAF3FC; color: #5B5B59; border-left: solid #EB6849 4px; border-radius: 2px; padding:0.7em;'>
-<span>
-<p style='margin-top:1em;margin-left:1em; text-align:justify'>
-<b>NOTE: Hate speech datasets generation</b></p>
-<p style='margin-left:1em;'>
-The users' content dataset used to analyze cybercrimes may contain hate speech content. Due to the type of content this datasets may, they have not been upload to into this Github. In order to be able to use the app, it is neccesary to add a dataset with messages for each user of the network. There are two ways to obtain this datasets.<br><br>
-    The first way is by simply requesting it to the author of this project.  This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json.<br><br>
-    The second one is by generating it using the original dataset and the Notebooks and Scripts present in this project. In this section there is more information about how to do this.
-</p>
-</p></span>
-</div>
-<br>
+
+> **_NOTE:_**    Hate speech datasets generation
+
+> The users' content dataset used to analyze cybercrimes may contain hate speech content. Due to the type of content this datasets may, they have not been upload to into this Github. In order to be able to use the app, it is neccesary to add a dataset with messages for each user of the network. There are two ways to obtain this datasets.<br><br>
+> The first way is by simply requesting it to the author of this project.  This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
+> The second one is by generating it using the original dataset and the Notebooks and Scripts present in this project. In this section there is more information about how to do this.<br>
+
 
 ### Download Original DataSet
 The original dataset is a CSV file with the contents of hundreds of tweets. It can be donwloaded from this site (you may need to login or create an account).
