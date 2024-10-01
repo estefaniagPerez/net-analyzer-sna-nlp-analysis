@@ -96,7 +96,7 @@ net-analyzer  | INFO:     Application startup complete.
 net-analyzer  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
-If you do not any log, use the following command to see the application logs:
+If you do not see any log, use the following command to see the logs of the application:
 ```bash
 docker logs net-analyzer
 ```
@@ -118,7 +118,7 @@ The application can found on:
 ## Local Execution
 This project can be manually run from the command line or it can be run directly from VSCode Run and Debug screen.
 
-### Manualy Setup the Project
+### Manually Setup the Project
 In this section it is explained how setup the project before running it. It is only necessary to do this setup once per machine.
 
 #### 1. Install Java SDK.
