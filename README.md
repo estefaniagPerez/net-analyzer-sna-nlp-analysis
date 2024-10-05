@@ -17,10 +17,8 @@
 
 
 ## License
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the software as per the terms of the license.
-
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the software as per the terms of the license. 
 We are not responsible for how third parties use the information provided by this project. The project is intended solely for academic purposes.
-
 Net-Analyzer is designed for academic research and educational purposes. Any other use is not authorized and done at the user's own risk.
 
 ## GitHub Repository Structure
