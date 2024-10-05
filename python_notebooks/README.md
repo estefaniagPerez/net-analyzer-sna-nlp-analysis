@@ -14,11 +14,8 @@ The structure of the folther is as follows
 
 + **sna_dataset.csv**: the dataset used for the tests.
 
-+ **new_csv_file**: other dataset used for comparation
-
-+ **models**: download NLP models from Spark-Nlp directly for testing locally stored models.
-
 + **sna_python.code-workspace**: VSCode configuration file.
+  
 + **.venv**: python virtual enviroment.
 
 + **.vscode**: VSCode configuration for the project
