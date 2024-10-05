@@ -1,4 +1,13 @@
 # Network-Analyzer - SNA & NLP
+![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Jupyter Badge](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=fff&style=for-the-badge)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![MongoDB Badge](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=for-the-badge)
+
+
+
 **Net-Analyzer**, is a final year master's degree project dedicated to helping with the detection of cybercrime through analytical techniques. In an era where digital threats are ever-evolving, safeguarding our online environments has never been more critical. Our project harnesses the power of **Social Network Analysis (SNA)** and **Natural Language Processing (NLP)** to identify, analyze, and mitigate malicious activities in cyberspace.
 
 ## License
