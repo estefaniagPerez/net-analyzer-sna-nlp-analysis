@@ -11,7 +11,7 @@
 **Net-Analyzer**, is a final year master's degree project dedicated to helping with the detection of cybercrime through analytical techniques. In an era where digital threats are ever-evolving, safeguarding our online environments has never been more critical. Our project harnesses the power of **Social Network Analysis (SNA)** and **Natural Language Processing (NLP)** to identify, analyze, and mitigate malicious activities in cyberspace.
 
 ## License
-This project is licensed under the MIT License. You are free to use, modify, and distribute the software as per the terms of the license.
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the software as per the terms of the license.
 
 We are not responsible for how third parties use the information provided by this project. The project is intended solely for academic purposes.
 
@@ -21,9 +21,9 @@ Net-Analyzer is designed for academic research and educational purposes. Any oth
 
 This repository contains two parts:
 
-1. net-analyzer: folder that contains the web application that given a social network graph is capable to 
+1. [Net-Analyzer](net-analyzer): folder that contains the web application that given a social network graph is capable to 
 
-2. python_notebooks: that contains Jupyter Notebooks that are primary used to study the NetworkX tool for SNA analysis, and the Spark-Nlp tool for NLP analysis.
+2. [Python Notebooks](python_notebooks): folder that contains Jupyter Notebooks primary used to study the NetworkX tool for SNA analysis, and the Spark-Nlp tool for NLP analysis.
 
 ## Datasets
 
