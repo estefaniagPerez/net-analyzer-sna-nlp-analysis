@@ -7,6 +7,16 @@ The first case is the prefered, since the user will only have to run a command t
 
 On the second case, while it can present difficulties when setting up the enviroment since it has to be done manually and in different enviroments, it allows to run and debugg the application while working on it.
 
+
+## Table of Contents
+1. [Datasets](#datasets)
+2. [Docker Container](#docker-container)
+3. [Local Execution](#local-execution)
+   
+    3.1. [Manual Setup](#manual-setup)
+   
+    3.2. [VSCode Setup](#vscode-setup) 
+
 ## Datasets
 
 <div class="warning" style='background-color:#FAF3FC; color: #5B5B59; border-left: solid #EB6849 4px; border-radius: 2px; padding:0.7em;'>
@@ -118,7 +128,7 @@ The application can found on:
 ## Local Execution
 This project can be manually run from the command line or it can be run directly from VSCode Run and Debug screen.
 
-### Manually Setup the Project
+### Manual Setup
 In this section it is explained how setup the project before running it. It is only necessary to do this setup once per machine.
 
 #### 1. Install Java SDK.
@@ -186,7 +196,7 @@ This will install all the needed dependencies for the front-end and it will also
 ```bash
 uvicorn app.main:app --reload
 ```
-### Using VSCode to Run the Project
+### VSCode Setup
 In this section it is explained how to run the project using the VSCode IDE, this allows to easyly build both the front-end and the back-end, and run or debugg the project, in a single step.
 
 #### 1. Install Extensions
