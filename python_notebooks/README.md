@@ -1,5 +1,17 @@
 # SNA and NLP Analysis
-In this proyect there is series of Jupyter with research of the different functionalities used by the SNA and NLP libraries used for the Net-Analyzer project. This Notebooks also include implementations similar at those use on the may project. Al the steps on the NoteBooks is documented inside the Notebooks themselves, in Markdown format.
+This project contains a series of Jupyter Notebooks that research SNA and NLP libraries used during the Net-Analyzer project. Every step on the NoteBooks is documented inside the Notebooks themselves in Markdown format.
+
+## Table of Contents
+1. [Structure](#structure)
+2. [How to Setup Jupyter Notebooks](#how-to-setup-jupyter-notebooks)
+   
+    2.1. [Using Anaconda](#using-anaconda)
+   
+    2.2. [Using only Python](#using-only-python)
+   
+    2.3. [Java Requirements for Spark-NLP](#java-requirements-for-spark-nlp) 
+   
+    2.4. [VSCode Setup](#vscode-setup) 
 
 ## Structure
 The structure of the folther is as follows
@@ -21,10 +33,10 @@ The structure of the folther is as follows
 + **.vscode**: VSCode configuration for the project
 
 
-## How to Setup Jupyter
+## How to Setup Jupyter Notebooks
 
 This section explains how to setup conda on VSCODE with its own enviroment
-### Install Anaconda in Linux
+### Using Anaconda
 
  To install Conda (Anaconda or Miniconda) on a Linux system, you can follow these steps:
 
@@ -68,7 +80,7 @@ This should display the version of Conda installed.
 If you encounter any issues during the installation, please provide more details so I can assist you further.
 
 
-### For Not Anaconda Install
+### Using only Python
  The dependencies for using Jupyner without conda, this can be done installing Jupyter notebooks from pip.
 ```bash
 pip install jupyterlab
@@ -93,7 +105,7 @@ JAVA_HOME=/usr/lib/<path_to_openjdk>
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 ```
 
-### Setup VSCode
+### VSCode Setup
 #### Step 1: Install the Jupyter extension on VSCODE
 To setup Jupyter in VSCODE, install the extension for [Jupyter by microsoft](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter).
 Either by going to the extantions market on the VSCODE or by using the following comand.
