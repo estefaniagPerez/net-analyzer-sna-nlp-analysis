@@ -14,7 +14,7 @@ This project contains a series of Jupyter Notebooks that research SNA and NLP li
     2.4. [VSCode Setup](#vscode-setup) 
 
 ## Structure
-The structure of the folther is as follows
+This project contains the following resources
 
 + **README.md**: this file
 
@@ -35,7 +35,7 @@ The structure of the folther is as follows
 
 ## How to Setup Jupyter Notebooks
 
-This section explains how to setup conda on VSCODE with its own enviroment
+This section explains how to setup Jupyter on VSCODE with its own enviroment
 ### Using Anaconda
 
  To install Conda (Anaconda or Miniconda) on a Linux system, you can follow these steps:
