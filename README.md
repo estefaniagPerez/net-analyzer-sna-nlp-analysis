@@ -13,7 +13,8 @@
 
 ## Table of Contents
 1. [License](#license)
-2. [Datasets](#datasets)
+2. [GitHub Repository Structure](#gitHub-repository-structure)
+3. [Datasets](#datasets)
 
 
 ## License
