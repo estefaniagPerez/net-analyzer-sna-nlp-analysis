@@ -26,7 +26,7 @@ Net-Analyzer is designed for academic research and educational purposes. Any oth
 
 This repository contains two parts:
 
-1. [Net-Analyzer](net-analyzer): folder that contains the web application that given a social network graph is capable to 
+1. [Net-Analyzer](net-analyzer): folder that contains the web application that given a social network graph is capable to detect influencers and bridges, and analyze the level hate speech spread by the users of the network.
 
 2. [Python Notebooks](python_notebooks): folder that contains Jupyter Notebooks primary used to study the NetworkX tool for SNA analysis, and the Spark-Nlp tool for NLP analysis.
 
