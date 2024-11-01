@@ -5,5 +5,5 @@ sqlalchemy
 networkx
 pandas
 spark-nlp==5.4.0
-pyspark==3.3.1
+pyspark>=3.3.2
 PyMongo
