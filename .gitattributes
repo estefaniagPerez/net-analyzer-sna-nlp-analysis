@@ -3,3 +3,5 @@
 *.ipynb linguist-detectable=false
 *.css linguist-detectable=false
 *.c linguist-detectable=false
+*.cpp linguist-detectable=false
+*.js linguist-detectable=false
