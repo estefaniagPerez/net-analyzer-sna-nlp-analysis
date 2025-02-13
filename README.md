@@ -1,4 +1,3 @@
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs?username=estefaniagPerez&show_icons=true&locale=en&layout=compact&hide=jupyter%20notebook)
 # Net-Analyzer - SNA & NLP
 ![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
