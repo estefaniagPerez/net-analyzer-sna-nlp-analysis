@@ -5,3 +5,4 @@
 *.c linguist-detectable=false
 *.cpp linguist-detectable=false
 *.js linguist-detectable=false
+*.jsx linguist-detectable=false
