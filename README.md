@@ -40,9 +40,9 @@ This repository has two parts:
 
 ### **_NOTE:_** Hate speech datasets generation
 
-> The dataset with users' content, used to analyze cybercrimes, may contain hate speech content. Due to the type of content this datasets have not been upload into this Github. In order to be able to use the app, a dataset with messages for each user of the network needs to be included. There is two ways to obtain these datasets.<br><br>
-> The first way is requesting it to the author of this project. This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
-> The second one is to generate it using the original dataset and the Notebooks and Scripts present in this project. More information about how to do this is presented next in this section.<br>
+> The dataset that has the users' content - used to analyze cybercrimes - may contain hate speech content. Due to the type of content these datasets have not been uploaded into this Github. In order to be able to use the application, there needs to be dataset with all the messages done by the users. There is two ways to obtain these datasets.<br><br>
+> The first way is asking for it to the author of this project. This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
+> The second option is to generate the dataset using the original dataset and the Notebooks and Scripts present in this project. Below there is more information about how to generate this dataset.
 
 
 ### Download Original DataSet
