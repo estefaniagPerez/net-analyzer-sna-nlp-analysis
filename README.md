@@ -44,16 +44,15 @@ This repository has two parts:
 > The first way is asking for it to the author of this project. This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
 > The second option is to generate the dataset using the original dataset and the Notebooks and Scripts present in this project. Below there is more information about how to generate this dataset.
 
-
 ### Download Original DataSet
-The original dataset is a CSV file with the contents of hundreds of tweets. It can be donwloaded from this site (you may need to login or create an account).
+The original dataset is a CSV file with the contents of hundreds of tweets. It can be donwloaded from the following site (you may need to login or create an account).
 
 ```bash
 https://www.kaggle.com/datasets/joulespinozasanchez/web-scrapping-twitter-racism
 ```
 
 ### Process Dataset With NoteBook
-In this step the dataset is going to be parsed and converted to other formats generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
+In this step the dataset is going to be parsed and converted to other formats, generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
 
 Fist, go to the python_notebook folder of the GitHub project, and save the dataset on the following folder:
 
@@ -65,13 +64,13 @@ Make sure the output folder exists:
 ./python_notebooks/datasets/proccessed/racism/
 ```
 
-Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets: a list of tweets by user, a graph dataset, and a likes list. In this case we need to copy the following dataset:
+Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets: a list of tweets by user, a graph dataset, and a list of likes. We will need to copy the following dataset:
 
 ```bash
 ./python_notebooks/datasets/proccessed/racism/tweets_by_user.json
 ```
-### Generate a Test Dataset for the Graph Nodes
-In this step a JSON file will be used to asign tweets to each of the nodes in the network.
+### Generate a Test Dataset for the Graph
+In this step a JSON file will be used to asign tweets to every node in the network.
 
 Go to the net-analyzer folder in this GitHub project, and copy the tweets_by_user.json into the scripts folder.
 
@@ -83,7 +82,7 @@ Run the script on the same folder to generate the mongodb dataset.
 ```bash
 python3 generate_dataset.py
 ```
-This will generate the file dataset.json. Copy this file in the following folder in order to configure it in MongoDB, loaded into the instance when using the Docker compose option to launch the project.
+This will generate the file dataset.json. Copy this file into the following folder in order to configure it in MongoDB, this dataset will be loaded into the instance when using the Docker compose option to launch the project.
 ```bash
 ./net-analyzer/mongodb-docker/mongo-seed
 ```
