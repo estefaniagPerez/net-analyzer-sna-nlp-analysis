@@ -29,20 +29,20 @@ Net-Analyzer is designed for academic research and educational purposes. Any oth
 
 ## GitHub Repository Structure
 
-This repository contains two parts:
+This repository has two parts:
 
-1. [Net-Analyzer](net-analyzer): folder that contains the web application that given a social network graph is capable to detect influencers and bridges, and analyze the level of hate speech spread by the users of the network.
+1. [Net-Analyzer](net-analyzer): a web application that detects influencers and bridges in a social network graph, and analyzes the level of hate speech that is spreading in the network.
 
-2. [Python Notebooks](python_notebooks): folder that contains Jupyter Notebooks, primary used to study the NetworkX tool for SNA analysis, and the Spark-Nlp tool for NLP analysis.
+2. [Python Notebooks](python_notebooks): Jupyter Notebooks used to study NetworkX tool for SNA analysis, and Spark-Nlp tool for NLP analysis.
 
 ## Datasets
 
 
 ### **_NOTE:_** Hate speech datasets generation
 
-> The users' content dataset used to analyze cybercrimes may contain hate speech content. Due to the type of content this datasets may, they have not been upload to into this Github. In order to be able to use the app, it is neccesary to add a dataset with messages for each user of the network. There are two ways to obtain this datasets.<br><br>
-> The first way is by simply requesting it to the author of this project.  This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
-> The second one is by generating it using the original dataset and the Notebooks and Scripts present in this project. In this section there is more information about how to do this.<br>
+> The dataset with users' content, used to analyze cybercrimes, may contain hate speech content. Due to the type of content this datasets have not been upload into this Github. In order to be able to use the app, a dataset with messages for each user of the network needs to be included. There is two ways to obtain these datasets.<br><br>
+> The first way is requesting it to the author of this project. This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
+> The second one is to generate it using the original dataset and the Notebooks and Scripts present in this project. More information about how to do this is presented next in this section.<br>
 
 
 ### Download Original DataSet
@@ -53,7 +53,7 @@ https://www.kaggle.com/datasets/joulespinozasanchez/web-scrapping-twitter-racism
 ```
 
 ### Process Dataset With NoteBook
-In this step the downloaded dataset is going to be parsed and converted to other formats generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
+In this step the dataset is going to be parsed and converted to other formats generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
 
 Fist, go to the python_notebook folder of the GitHub project, and save the dataset on the following folder:
 
@@ -65,15 +65,15 @@ Make sure the output folder exists:
 ./python_notebooks/datasets/proccessed/racism/
 ```
 
-Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets, including a list of tweets by user, a graph dataset, and a likes list. In this case we need to copy the following dataset:
+Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets: a list of tweets by user, a graph dataset, and a likes list. In this case we need to copy the following dataset:
 
 ```bash
 ./python_notebooks/datasets/proccessed/racism/tweets_by_user.json
 ```
 ### Generate a Test Dataset for the Graph Nodes
-In this step the JSON file will be used to asign tweets to each of the nodes of the network.
+In this step a JSON file will be used to asign tweets to each of the nodes in the network.
 
-Go to the net-analyzer folder of the GitHub project, and copy the tweets_by_user.json into the scripts folder.
+Go to the net-analyzer folder in this GitHub project, and copy the tweets_by_user.json into the scripts folder.
 
 ```bash
 ./net-analyzer/scripts/hatespeech-dataset
@@ -83,7 +83,7 @@ Run the script on the same folder to generate the mongodb dataset.
 ```bash
 python3 generate_dataset.py
 ```
-This will generate the file dataset.json. Copy this file in the following folder so it setup on the MongoDB instance when using the Docker setup.
+This will generate the file dataset.json. Copy this file in the following folder in order to configure it in MongoDB, loaded into the instance when using the Docker compose option to launch the project.
 ```bash
 ./net-analyzer/mongodb-docker/mongo-seed
 ```
