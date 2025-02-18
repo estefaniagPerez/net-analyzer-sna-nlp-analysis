@@ -35,14 +35,14 @@ The second option is to generate the dataset using the original dataset and the 
 <br>
 
 ### Download Original DataSet
-The original dataset is a CSV file with the contents of hundreds of tweets. It can be donwloaded from this site (you may need to login or create an account).
+The original dataset is a CSV file with the contents of hundreds of tweets. It can be donwloaded from the following site (you may need to login or create an account).
 
 ```bash
 https://www.kaggle.com/datasets/joulespinozasanchez/web-scrapping-twitter-racism
 ```
 
 ### Process Dataset With NoteBook
-In this step the dataset is going to be parsed and converted to other formats generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
+In this step the dataset is going to be parsed and converted to other formats, generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
 
 Fist, go to the python_notebook folder of the GitHub project, and save the dataset on the following folder:
 
@@ -54,13 +54,13 @@ Make sure the output folder exists:
 ./python_notebooks/datasets/proccessed/racism/
 ```
 
-Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets: a list of tweets by user, a graph dataset, and a likes list. In this case we need to copy the following dataset:
+Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets: a list of tweets by user, a graph dataset, and a list of likes. We will need to copy the following dataset:
 
 ```bash
 ./python_notebooks/datasets/proccessed/racism/tweets_by_user.json
 ```
-### Generate a Test Dataset for the Graph Nodes
-In this step a JSON file will be used to asign tweets to each of the nodes in the network.
+### Generate a Test Dataset for the Graph
+In this step a JSON file will be used to asign tweets to every node in the network.
 
 Go to the net-analyzer folder in this GitHub project, and copy the tweets_by_user.json into the scripts folder.
 
@@ -72,14 +72,14 @@ Run the script on the same folder to generate the mongodb dataset.
 ```bash
 python3 generate_dataset.py
 ```
-This will generate the file dataset.json. Copy this file in the following folder in order to configure it in MongoDB, loaded into the instance when using the Docker compose option to launch the project.
+This will generate the file dataset.json. Copy this file into the following folder in order to configure it in MongoDB, this dataset will be loaded into the instance when using the Docker compose option to launch the project.
 ```bash
 ./net-analyzer/mongodb-docker/mongo-seed
 ```
 
 
 ## Docker Container
-First make sure Docker engine is installed on the host machine. If not, install Docker on the machine following the [Docker documentation](https://docs.docker.com/engine/install/).
+First make sure Docker engine is installed on the host machine. If not, install Docker following [Docker documentation](https://docs.docker.com/engine/install/).
 
 To setup the container, first, go to the net-analyzer folder.
 ```bash
@@ -96,7 +96,8 @@ After the initial setup, if the container/s is not running the following command
 docker compose up
 ```
 
-When the application is started, it may take several minutes to completly load due to the NLP model configuration. Wait until the following logs appears on the console before opening the application.
+When the application is started, it may take several minutes to completly load, this is cased because the NLP model configuration takes a time to be load when the application starts. 
+Wait until the following logs appear on the console before opening the application.
 ```bash
 net-analyzer  | bert_classifier_bert_base_uncased_hatexplain download ...
 net-analyzer  | Approximate size to download 391.1 MB
@@ -113,17 +114,16 @@ If you do not see any log, use the following command to see the logs of the appl
 ```bash
 docker logs net-analyzer
 ```
-The column net-analyzer, may not appear in this case.
+The column net-analyzer, may not appear in some case.
 
 
-After this, the will be available two services one for the Net-Analyzer application and another one for MongoDB client, both accesible from a web browser.
+After this, there will be two services available, one for the Net-Analyzer application and another one for MongoDB client, both accesible from a web browser.
 
-The application can found on:
+The application can be found on:
 ```bash
 0.0.0.0:8000
 ```
 The MongoExpress client can be found on:
-The application can found on:
 ```bash
 0.0.0.0:8081
 ```
@@ -132,7 +132,7 @@ The application can found on:
 This project can be manually run from the command line or it can be run directly from VSCode Run and Debug screen.
 
 ### Manual Setup
-In this section it is explained how setup the project before running it. It is only necessary to do this setup once per machine.
+In this section we explain how setup the project. It is only necessary to do this setup once per machine.
 
 #### 1. Install Java SDK.
 Spark-Nlp requires Java to work. As such it is neccesary to install it. [Spark-NLP Documentation](https://sparknlp.org/docs/en/quickstart) recomends Java 11 o 8, but this application has been developed using Java 17 without issues.
@@ -148,26 +148,26 @@ After this make sure java is on the system PATH by running
 java --version
 ```
 
-If the versión is not the one desired, configured it by using
+If the versión is not the one we want to use, configured it with
 ```bash
 sudo update-alternatives --config java 
 ```
 
-If a command not found is reported, in Ubuntu use the the following commands to setup the system PATH - on Windows use the Enviroment Variables on System configuration -.
+If a message indicating that the "command was not found" is reported, in Ubuntu, use the the following commands to setup the PATH - on Windows use the Enviroment Variables at System configuration -.
 ```
 export JAVA_HOME=/usr/local/openjdk-17
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
 #### 2. Python Dependencies Installation
-The BackEnd runs on Python, and uses a few dependencies that are outside 
+The BackEnd runs on Python, and uses a few dependencies that are in the requierements.txt file. 
 
 ```bash
 pip install -r requirements.txt
 ```
 
 #### 3. Mount MongoDB Database
-To mount MongoDB Database use the docker-compose.yml on the 
+To configure MongoDB Database, use the docker-compose.yml inside the MongoDB folder.
 First install Docker and run the following command from the mondodb_local_docker folder.
 ```bash
 docker compose up
@@ -179,7 +179,7 @@ docker-compose up
 
 
 ### Manualy Running the Project
-In this section it is explained how to launch the project from the comand line.
+In this section we explain how to launch the project from the comand line.
 
 #### Building ReactJS Client
 
@@ -192,7 +192,7 @@ Then run the build command.
 ```bash
 npm run build
 ```
-This will install all the needed dependencies for the front-end and it will also build the application.
+This will install all the dependencies for the front-end and it will also build the application.
 
 #### Running the application
 
@@ -200,21 +200,21 @@ This will install all the needed dependencies for the front-end and it will also
 uvicorn app.main:app --reload
 ```
 ### VSCode Setup
-In this section it is explained how to run the project using the VSCode IDE, this allows to easyly build both the front-end and the back-end, and run or debugg the project, in a single step.
+In this section we explain how to run the project using the VSCode IDE, this will build both the front-end and the back-end, and run or debugg the project, in a single step.
 
 #### 1. Install Extensions
 
-Make sure the [extension for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is installed. It is also recommended to install the [extension for Docker](https://code.visualstudio.com/docs/containers/overview), to easyly manage the MongoDB containers.
+Make sure the [extension for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is installed. It is also recommended to install the [extension for Docker](https://code.visualstudio.com/docs/containers/overview), to manage the Docker containers.
 
 #### 2. Run The application
 
-The folder .vscode, contains the configuration for the IDE workspace envirement, but it also contains the configuration for the execution of the application. Two launch configuration have been created, one for compiling and running the whole application and another one for building the front-end - if the application is running and we are changing the front-end this task allows for it to be build and reload without reestrating the server -.
+The folder .vscode, contains the configuration for the IDE workspace enviroment, but it also contains the configuration for the execution of the application.There are two configurations available to launch the project. One for compiling and running the whole application and another one for building the front-end - if the application is running and we are changing the front-end we can reload the front-end without restarting the whole server -.
 
-On the VSCode IDE, go to the Debugg and Run screen, and there a two options:
+On the VSCode IDE, go to the Debug and Run screen, and select one of the two options:
 
-1. Build and Run Flask app: that builds and start the whole application.
+1. Build and Run Flask app: this builds and starts the whole application.
 
-2. React Build (npm): that rebuilds the front-end allowing to load the changes without restarting the whole application..
+2. React Build (npm): this rebuilds the front-end which loads the changes without restarting the whole application..
 
-The application can be run by either pressing the F5 key from anywhere on the VSCode IDE - make sure the proper option is selected -, or by clicking the Play button on the Run and Debugg screen.
+The application can be run by either pressing the F5 key from anywhere on the VSCode IDE - make sure the proper option is selected -, or by clicking the Play button on the Run and Debug screen.
 
