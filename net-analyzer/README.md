@@ -24,9 +24,11 @@ On the second case, while it can present difficulties when setting up the enviro
 <p style='margin-top:1em;margin-left:1em; text-align:justify'>
 <b>NOTE: Hate speech datasets generation</b></p>
 <p style='margin-left:1em;'>
-The users' content dataset used to analyze cybercrimes may contain hate speech content. Due to the type of content this datasets may, they have not been upload to into this Github. In order to be able to use the app, it is neccesary to add a dataset with messages for each user of the network. There are two ways to obtain this datasets.<br><br>
-    The first way is by simply requesting it to the author of this project.  This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json.<br><br>
-    The second one is by generating it using the original dataset and the Notebooks and Scripts present in this project. In this section there is more information about how to do this.
+
+The dataset that has the users' content - used to analyze cybercrimes - may contain hate speech content. Due to the type of content these datasets have not been uploaded into this Github. In order to be able to use the application, there needs to be dataset with all the messages done by the users. There is two ways to obtain these datasets.<br><br>
+The first way is asking for it to the author of this project. This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
+The second option is to generate the dataset using the original dataset and the Notebooks and Scripts present in this project. Below there is more information about how to generate this dataset.
+<br>
 </p>
 </p></span>
 </div>
@@ -40,7 +42,7 @@ https://www.kaggle.com/datasets/joulespinozasanchez/web-scrapping-twitter-racism
 ```
 
 ### Process Dataset With NoteBook
-In this step the downloaded dataset is going to be parsed and converted to other formats generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
+In this step the dataset is going to be parsed and converted to other formats generating a series of CSV and JSON files. Make sure Pandas is installed on the python enviroment.
 
 Fist, go to the python_notebook folder of the GitHub project, and save the dataset on the following folder:
 
@@ -52,15 +54,15 @@ Make sure the output folder exists:
 ./python_notebooks/datasets/proccessed/racism/
 ```
 
-Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets, including a list of tweets by user, a graph dataset, and a likes list. In this case we need to copy the following dataset:
+Once done, use the test_proccess_dataset.ipynb Jupyter Notebook to generate the datasets: a list of tweets by user, a graph dataset, and a likes list. In this case we need to copy the following dataset:
 
 ```bash
 ./python_notebooks/datasets/proccessed/racism/tweets_by_user.json
 ```
 ### Generate a Test Dataset for the Graph Nodes
-In this step the JSON file will be used to asign tweets to each of the nodes of the network.
+In this step a JSON file will be used to asign tweets to each of the nodes in the network.
 
-Go to the net-analyzer folder of the GitHub project, and copy the tweets_by_user.json into the scripts folder.
+Go to the net-analyzer folder in this GitHub project, and copy the tweets_by_user.json into the scripts folder.
 
 ```bash
 ./net-analyzer/scripts/hatespeech-dataset
@@ -70,10 +72,11 @@ Run the script on the same folder to generate the mongodb dataset.
 ```bash
 python3 generate_dataset.py
 ```
-This will generate the file dataset.json. Copy this file in the following folder so it setup on the MongoDB instance when using the Docker setup.
+This will generate the file dataset.json. Copy this file in the following folder in order to configure it in MongoDB, loaded into the instance when using the Docker compose option to launch the project.
 ```bash
 ./net-analyzer/mongodb-docker/mongo-seed
 ```
+
 
 ## Docker Container
 First make sure Docker engine is installed on the host machine. If not, install Docker on the machine following the [Docker documentation](https://docs.docker.com/engine/install/).
