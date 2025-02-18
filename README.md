@@ -13,8 +13,12 @@
 
 ## Table of Contents
 1. [License](#license)
-2. [GitHub Repository Structure](#gitHub-repository-structure)
+2. [GitHub Repository Structure](#github-repository-structure)
 3. [Datasets](#datasets)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f205e137-f326-4533-ab97-f43692e3dd58" />
+</p>
 
 
 ## License
