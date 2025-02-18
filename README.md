@@ -11,7 +11,6 @@
 **Net-Analyzer**, is a final year master's degree project focus on the detection of cybercrime through analytical techniques. In an era where digital threats are ever-evolving, safeguarding our online environments has never been more critical. Our project harnesses the power of **Social Network Analysis (SNA)** and **Natural Language Processing (NLP)** to identify, analyze, and mitigate malicious activities in cyberspace.
 
 <p align="center">
-  <br>
   <img src="https://github.com/user-attachments/assets/0cc8a399-036f-46fc-b70b-c46de73226c2" />
   <br>
 </p>
