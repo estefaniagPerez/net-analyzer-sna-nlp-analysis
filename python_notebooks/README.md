@@ -1,5 +1,5 @@
 # SNA and NLP Analysis
-This project contains a series of Jupyter Notebooks that research SNA and NLP libraries used during the Net-Analyzer project. Every step on the NoteBooks is documented inside the Notebooks themselves in Markdown format.
+This project contains a series of Jupyter Notebooks used to test SNA and NLP libraries for the Net-Analyzer project. Every step on the NoteBooks is documented inside the Notebooks themselves, with the Markdown format.
 
 ## Table of Contents
 1. [Structure](#structure)
