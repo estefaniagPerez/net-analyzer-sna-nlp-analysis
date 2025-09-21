@@ -31,16 +31,16 @@ Net-Analyzer is designed for academic research and educational purposes. Any oth
 
 This repository has two parts:
 
-1. [Net-Analyzer](net-analyzer): a web application that detects influencers and bridges in a social network graph, and analyzes the level of hate speech that is spreading in the network.
+1. [Net-Analyzer](net-analyzer): a web application that detects influencers and bridges in a social network graph, and analyzes the level of attacks on vulnerable groups or cyberbulling that is spreading in the network.
 
 2. [Python Notebooks](python_notebooks): Jupyter Notebooks used to study NetworkX tool for SNA analysis, and Spark-Nlp tool for NLP analysis.
 
 ## Datasets
 
 
-### **_NOTE:_** Hate speech datasets generation
+### **_NOTE:_** Attacks on vulnerable groups or cyberbulling message datasets generation
 
-> The dataset that has the users' content - used to analyze cybercrimes - may contain hate speech content. Due to the type of content these datasets have not been uploaded into this Github. In order to be able to use the application, there needs to be dataset with all the messages done by the users. There is two ways to obtain these datasets.<br><br>
+> The dataset that has the users' content - used to analyze cybercrimes - may contain attacks on vulnerable groups or cyberbulling content. Due to the type of content these datasets have not been uploaded into this Github. In order to be able to use the application, there needs to be dataset with all the messages done by the users. There is two ways to obtain these datasets.<br><br>
 > The first way is asking for it to the author of this project. This dataset needs to be added to the folder /mongodb-docker/mongo-seed/ with the name dataset.json. <br><br>
 > The second option is to generate the dataset using the original dataset and the Notebooks and Scripts present in this project. Below there is more information about how to generate this dataset.
 
