@@ -8,7 +8,7 @@
 
 
 
-**Net-Analyzer**, is a master's thesis project that uses analytical techniques for cybercrime detection. This project combines the power of **Social Network Analysis (SNA)** and **Natural Language Processing (NLP)** to identify, analyze, and mitigate malicious activities in cyberspace like **Hate Speech**.
+**Net-Analyzer**, is a master's thesis project that uses analytical techniques for cybercrime detection. This project combines the power of **Social Network Analysis (SNA)** and **Natural Language Processing (NLP)** to identify, analyze, and mitigate malicious activities in cyberspace like **Vulnerable Groups Attacks or Cyber Bullying**.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0cc8a399-036f-46fc-b70b-c46de73226c2" />
